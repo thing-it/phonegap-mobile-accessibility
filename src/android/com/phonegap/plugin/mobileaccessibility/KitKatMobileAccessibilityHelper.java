@@ -43,7 +43,7 @@ public class KitKatMobileAccessibilityHelper extends
 
     @Override
     public boolean isScreenReaderRunning() {
-        return mAccessibilityManager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_BRAILLE | AccessibilityServiceInfo.FEEDBACK_SPOKEN).size() > 0;
+        return mAccessibilityManager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_ALL_MASK).size() > 0;
     }
 
     @Override
